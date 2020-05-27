@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+   font-size: 62.5%; // Setting base pixelsize to 10, so 1.0rem = 10px
+   background-color: white;
+   margin: 0;
+}
+
+body {
+   height: 100%;
+   color: $dark-grey;
+   font-family: 'Barlow', sans-serif;
+   font-size: $m-size;
+   line-height: 1.5;
+   margin: 0;
+}
+
+button {
+   cursor: pointer;
+}
+
+button:disabled {
+   cursor: default;
+}
+
+.is-active {
+   font-weight: bold;
+}
