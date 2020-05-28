@@ -1,18 +1,9 @@
 
-.avatar {
-   width: 100%;
-   height: auto;
-   border-radius: 4px;
-   position: absolute;
-   top: 0;
-   left: 0;
-}
-
 .avatar-container {
    width: 70%;
    margin: 0 auto;
    @media (min-width: $desktop-breakpoint) {
-      width: 65%;
+      width: 70%;
    }
 }
 
@@ -24,4 +15,30 @@
    height: 0;
    position: relative;
 }
+
+.avatar {
+   width: 100%;
+   height: auto;
+   border-radius: 4px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.cv-container {
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   //margin: 0 auto;
+}
+
+.cv {
+   //display: inline-block;
+   height: 100%;
+   width: 100%;
+   @media (min-width: $desktop-breakpoint) {
+      width: 75%;
+   }
+}
+
 

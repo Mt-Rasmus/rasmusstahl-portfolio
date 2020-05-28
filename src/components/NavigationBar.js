@@ -9,27 +9,44 @@ const NavigationBar = () => {
          <div className="content-container-nav">
             <div className="avatar-container">
                <div className="avatar-container-sub">
+               <Link to="/" className="nav-link">
                   <img 
                      className="avatar"
                      src={`/images/photo2.png`} alt=""
                   />
+               </Link>
                </div>
             </div>
-            <h2>Rasmus Ståhl</h2>
-            <p>Software Developer</p>
-            <ul className="list">
-               <li>
-                  <Link to="/introduction" className="nav-link">
-                     <h2 className="list-item">Introduction</h2>
-                  </Link> 
-               </li>    
-               <li>             
-                  <Link to="/projects" className="nav-link">
-                     <h2 className="list-item">Projects</h2>
-                  </Link>            
-               </li>
-            </ul>
-            <Contact />
+            <div className="text-container">
+               <h2 className="title">Rasmus Ståhl</h2>
+               <p className="subtitle">Software Developer</p>
+            </div>
+            <div>
+               <ul className="list">
+                  <li>
+                     <Link to="/about" className="nav-link">
+                        <h2 className="list-item">About me</h2>
+                     </Link> 
+                  </li>    
+                  <li>             
+                     <Link to="/projects" className="nav-link">
+                        <h2 className="list-item">Projects</h2>
+                     </Link>            
+                  </li>
+                  <li>             
+                     <Link to="/experience" className="nav-link">
+                        <h2 className="list-item">Experience</h2>
+                     </Link>            
+                  </li>    
+                  <li>             
+                     <a className="nav-link" href={`/pdf/CV_1.pdf`}>
+                        <h2 className="list-item">CV</h2>
+                     </a>       
+                  </li>                                    
+               </ul>
+               <Contact />
+            </div>
+
          </div>
       </div>
    )

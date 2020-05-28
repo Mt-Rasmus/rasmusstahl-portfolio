@@ -10,4 +10,4 @@ ReactDOM.render(<AppRouter />, document.getElementById('root'));
 
 serviceWorker.unregister();
 
-history.push('/introduction');
+history.push('/');

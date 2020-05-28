@@ -7,7 +7,7 @@ const CustomRoute = ({ component: Component, ...props }) => {
    return (
       <Route {...props} component={(props) => (
          <div className="content-container-main">
-            <NavigationBar/>  
+            <NavigationBar/>
             <Component {...props} />
          </div>
       )}/>
