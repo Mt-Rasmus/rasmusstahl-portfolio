@@ -1,9 +1,21 @@
 
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Contact from './Contact';
+import PageList from './PageList';
 import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
+
+   const [showMenu, setShowMenu] = useState(false);
+   const mql = window.matchMedia("(min-width: 45rem)");
+   const showMenuHandler = e => (e.matches && showMenu) && setShowMenu(!showMenu);
+
+   useEffect(() => {
+      // hide sliding menu when going back to small screen
+      mql.addListener(showMenuHandler);
+      return () => mql.removeListener(showMenuHandler);
+   }, [showMenu,showMenuHandler,mql])
+
    return (
       <div className="navigation-bar">
          <div className="content-container-nav">
@@ -21,32 +33,25 @@ const NavigationBar = () => {
                <h2 className="title">Rasmus Ståhl</h2>
                <p className="subtitle">Software Developer</p>
             </div>
-            <div>
-               <ul className="list">
-                  <li>
-                     <Link to="/about" className="nav-link">
-                        <h2 className="list-item">About me</h2>
-                     </Link> 
-                  </li>    
-                  <li>             
-                     <Link to="/projects" className="nav-link">
-                        <h2 className="list-item">Projects</h2>
-                     </Link>            
-                  </li>
-                  <li>             
-                     <Link to="/experience" className="nav-link">
-                        <h2 className="list-item">Experience</h2>
-                     </Link>            
-                  </li>    
-                  <li>             
-                     <a className="nav-link" href={`/pdf/CV_1.pdf`}>
-                        <h2 className="list-item">CV</h2>
-                     </a>       
-                  </li>                                    
-               </ul>
-               <Contact />
-            </div>
-
+            <nav>
+               <div className="show-mobile">
+                  <img 
+                     src="images/ham.svg" 
+                     alt="toggle menu"
+                     onClick={() => setShowMenu(!showMenu)}
+                  />
+                  {(showMenu) && <div 
+                     className="slider" 
+                     id="slider"
+                  > 
+                     <PageList /> 
+                  </div>}     
+               </div>
+               <span className="show-desktop">
+                  <PageList />   
+               </span>  
+            </nav>
+            <Contact />
          </div>
       </div>
    )

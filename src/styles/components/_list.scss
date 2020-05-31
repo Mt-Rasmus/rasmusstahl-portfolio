@@ -2,6 +2,7 @@
 .list {
    list-style: none;
    //padding-left: $s-size;
+   margin-top: $l-size;
    padding-left: 0;
 }
 
@@ -12,4 +13,24 @@
 .list-item {
    font-size: $font-size-xl;
    margin: $s-size 0 0 0;
+}
+
+.show-desktop { /* show menu buttons */
+   display: none;
+   @media (min-width: $desktop-breakpoint) {
+      display: block;
+      //margin: 0 auto 13% auto;
+   }
+}
+
+.show-mobile { /* show menu buttons */
+   display: block;
+   @media (min-width: $desktop-breakpoint) {
+      display: none;
+      //margin: 0 auto 13% auto;
+   }
+}
+
+.hide-slider {
+   display: none;
 }

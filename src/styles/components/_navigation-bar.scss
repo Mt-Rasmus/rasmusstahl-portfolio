@@ -3,6 +3,8 @@
    background-color: blueviolet;
    width: 100%;
    @media (min-width: $desktop-breakpoint) {
+      animation-name: fadeInX;
+      animation-duration: .8s;
       width: 30rem;
       height: 100%;
    }
@@ -20,4 +22,35 @@
 
 .subtitle {
    margin: 0;
+}
+
+// .show-desktop { /* show menu buttons */
+//    @media (min-width: $desktop-breakpoint) {
+//       display: block;
+//       margin: 0 auto 13% auto;
+//    }
+// }
+
+// .hide-desktop { /* Hide hamburger menu */
+//    @media (min-width: $desktop-breakpoint) {
+//       display: none;
+//    }
+// }
+
+@keyframes fadeInX {
+   from {transform: translateX(-90%); opacity: 0.9;}
+   to {transform: translateY(0); opacity: 1;}
+ }
+
+
+@keyframes fadeInY {
+   from {transform: translateY(-20%); opacity: 0;}
+   to {transform: translateY(0); opacity: 1;}
+ }
+
+.slider {
+   position: absolute;
+   background-color: black;
+   animation-name: fadeInY;
+   animation-duration: .6s;
 }
