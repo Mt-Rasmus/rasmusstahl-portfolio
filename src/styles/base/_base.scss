@@ -6,19 +6,23 @@
 }
 
 html {
-   height: 100%;
    font-size: 62.5%; // Setting base pixelsize to 10, so 1.0rem = 10px
    background-color: white;
-   margin: 0;
 }
 
 body {
-   height: 100%;
    color: $dark-grey;
    font-family: 'Barlow', sans-serif;
    font-size: $m-size;
    line-height: 1.5;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   padding: 0;
    margin: 0;
+   overflow-x: hidden;
 }
 
 button {

@@ -4,7 +4,18 @@ import React from 'react';
 const Contact = () => {
    return (
       <div>
-         <h2>Contact:</h2>
+         <h2 className="show-desktop">Contact:</h2>
+         <div>
+            <a href="https://www.linkedin.com/in/rasmus-st%C3%A5hl/">
+               <img src="images/contact/linkedin.svg" className="contact-icon"></img>
+            </a>
+            <a href="https://github.com/Mt-Rasmus">
+               <img src="images/contact/github.svg" className="contact-icon"></img>
+            </a>
+            <a href="mailto: rasmus.stahl.47@gmail.com">
+               <img src="images/contact/gmail.svg" className="contact-icon"></img>
+            </a>
+         </div>
       </div>
    )
 }

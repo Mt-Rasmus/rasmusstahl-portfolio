@@ -10,11 +10,6 @@
    text-decoration: none;
 }
 
-.list-item {
-   font-size: $font-size-xl;
-   margin: $s-size 0 0 0;
-}
-
 .show-desktop { /* show menu buttons */
    display: none;
    @media (min-width: $desktop-breakpoint) {

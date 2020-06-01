@@ -1,9 +1,9 @@
 
 .avatar-container {
-   width: 70%;
+   width: 77%;
    margin: 0 auto;
    @media (min-width: $desktop-breakpoint) {
-      width: 70%;
+      width: 77%;
    }
 }
 
@@ -25,11 +25,61 @@
    left: 0;
 }
 
-.cv-container {
-   height: 100%;
+// .site-web-container {
+//    width: 50rem;
+//    display: table-cell;
+//    vertical-align: middle;
+//    margin-left: 3rem;
+// }
+
+// .site-web-container--left {
+//    margin-right: 3rem;
+// }
+
+// .site-web {
+//    width: 50rem;
+//    display: inline-block;
+//    vertical-align: middle;
+// }
+
+.site-web-container {
    width: 100%;
+   display: block;
+   @media (min-width: $desktop-breakpoint) {
+      width: 50rem;
+      display: table-cell;
+      vertical-align: middle;
+      margin-left: 3rem;
+   }
+
+}
+
+.site-web-container--left {
+   margin-right: 3rem;
+}
+
+.site-web {
+   width: inherit;
+   display: block;
+   @media (min-width: $desktop-breakpoint) {
+      width: 50rem;
+      display: inline-block;
+      vertical-align: middle;
+   }
+   @media (max-width: $breakpoint-medium) {
+      width: 100%;
+
+   }
+}
+
+.helper {
+   height: 100%;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.cv-container {
    text-align: center;
-   //margin: 0 auto;
 }
 
 .cv {
@@ -38,6 +88,28 @@
    width: 100%;
    @media (min-width: $desktop-breakpoint) {
       width: 75%;
+   }
+}
+
+.icon-container {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: $m-size;
+   @media (min-width: $desktop-breakpoint) {
+      position: static;
+   }
+}
+
+.hamburger-menu {
+   width: 20%;
+}
+
+.contact-icon {
+   margin: 0 $xs-size;
+   width: 12.5%;
+   @media (min-width: $desktop-breakpoint) {
+      margin: 0 $s-size;
+      width: 20%;
    }
 }
 
