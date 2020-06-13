@@ -8,21 +8,44 @@
       flex-direction: row;
    }
 }
+
+.content-align-sbs--wrap {
+   flex-direction: row;
+   flex-wrap: wrap;
+   background: $off-white-darker;
+   margin: 0 $s-size;
+}
+
+
 .content-align-sbs--project {
    @media (max-width: $breakpoint-medium) {
       flex-direction: column;
    }
 }
 
+.content-align-sbs--project--left {
+   @media (max-width: $breakpoint-medium) {
+      flex-direction: column-reverse;
+   }
+}
+
+.content-container-parent {
+   min-width: 0;
+   max-width: 100%;
+}
+
 .content-container {
    //margin: 0 auto; /* This with max-width centers content */
    padding: 0 $m-size;
-   width: 100%;
+   max-width: 100%;
+   min-width: 0;
    @media (min-width: $desktop-breakpoint) {
       padding: 0 $xl-size;
-      width: 80%;
+      //max-width: 90%;
+      min-width: 0;
    }
    @media (min-width: $breakpoint-small) {
+      //color: green;
       padding: 0 $xxl-size;
    }   
    @media (min-width: $breakpoint-large) {
@@ -30,9 +53,6 @@
    }
    @media (min-width: $breakpoint-xl) {
       padding: 0 $xxxxl-size;
-   }
-   @media (min-width: $breakpoint-xl) {
-      padding: 0;
    }
 }
 
@@ -54,32 +74,25 @@
 }
 
 .box-slant {
-
+   background: $off-white-darker;
+   position: relative;
+   &:before,
+   &:after {
+     background: inherit;
+     content: '';
+     display: block;
+     height: 7rem;
+     left: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+     transform: skewY(1.5deg);
+     margin-top: -4rem;
+   }
+   &:before {
+      transform: skewY(1.5deg);
+   }
+   &:after {
+      transform: skewY(-2.0deg);
+   }
 }
-
-// .box-slant {
-//    background: $off-white-darker;
-//    &:before,
-//    &:after {
-//      background: inherit;
-//      content: '';
-//      display: block;
-//      height: 7rem;
-//      width: 100%;
-//      left: 0;
-//      right: 0;
-//      position: absolute;
-//      z-index: -1;
-//      transform: skewY(1.5deg);
-//      margin-top: -4rem;
-//      @media (min-width: $desktop-breakpoint) {
-//       left: 25rem;
-//    }
-//    }
-//    &:before {
-//       transform: skewY(1.5deg);
-//    }
-//    &:after {
-//       transform: skewY(-2.0deg);
-//    }
-// }

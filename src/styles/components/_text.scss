@@ -2,10 +2,22 @@
 .project-text {
    position: relative;
    width: auto;
+   h1 {
+      margin-top: 0;
+   }
    li {
       font-size: $font-size-medium;
    }
    p {
+      font-size: $font-size-large;
+   }
+}
+
+.tech-name {
+   margin: $xs-size auto;
+   font-size: $font-size-medium;
+   @media (min-width: $desktop-breakpoint) {
+      margin: $s-size auto;
       font-size: $font-size-large;
    }
 }

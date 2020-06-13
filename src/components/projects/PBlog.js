@@ -26,19 +26,74 @@ const PBlog = () => {
                      <li>Responsive design. </li>
                   </ul>                     
             </div>
-            <div className="site-web-container">
+            <div className="img-container-project">
+               <span className="helper"></span>
                <img 
-                  className="site-web"
+                  className="img-project"
                   src={`/images/projects/pBlog2.png`} alt=""
-               />              
+               />                             
             </div>
          </div>
          <div>
          <p>Tech:</p>
-            <div>
-               <div><p>JavaScript</p></div>
-               <div><p>CSS3</p></div>
-               <div><p>HTML5</p></div>
+            <div className="content-align-sbs content-align-sbs--wrap">
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/javascript.svg`} alt=""
+                  />   
+                  <p className="tech-name">JavaScript</p>
+               </div>
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     style={{color: "red"}}
+                     src={`/images/tech/css3.svg `} alt=""
+                  />                
+                  <p className="tech-name">CSS3</p>
+               </div>
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/html5.svg`} alt=""
+                  />                
+                  <p className="tech-name">HTML5</p>
+               </div>
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/react.svg`} alt=""
+                  />                
+                  <p className="tech-name">React</p>
+               </div>
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/redux.svg`} alt=""
+                  />                
+                  <p className="tech-name">Redux</p>
+               </div>  
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/firebase.svg`} alt=""
+                  />                
+                  <p className="tech-name">Firebase</p>
+               </div> 
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/webpack.svg`} alt=""
+                  />                
+                  <p className="tech-name">Webpack</p>
+               </div>   
+               <div className="content-align-sbs tech-icon-container">
+                  <img 
+                     className="tech-icon"
+                     src={`/images/tech/git.svg`} alt=""
+                  />                
+                  <p className="tech-name">Git</p>
+               </div>                                                                          
             </div>
          </div>         
       </div>

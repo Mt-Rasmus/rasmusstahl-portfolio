@@ -16,9 +16,10 @@ const ThaWeather = () => {
                      <li>Includes a four day forecast as well. </li>
                   </ul>         
             </div>
-            <div className="site-web-container">
+            <div className="img-container-project ">
+               <span className="helper"></span>
                <img 
-                  className="site-web"
+                  className="img-project"
                   src={`/images/projects/pBlog2.png`} alt=""
                />              
             </div>         
