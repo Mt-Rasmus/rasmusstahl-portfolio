@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500;600&display=swap');
+
 .project-text {
    position: relative;
    width: auto;
@@ -13,6 +16,11 @@
    }
 }
 
+.pagetitle {
+   font-family: 'Bebas Neue', cursive;
+   font-size: $font-size-xxxl;
+}
+
 .tech-name {
    margin: $xs-size auto;
    font-size: $font-size-medium;
@@ -20,4 +28,19 @@
       margin: $s-size auto;
       font-size: $font-size-large;
    }
+}
+
+.tech-header-title {
+   text-align: center;
+   font-family: 'Changa', sans-serif;
+   font-size: $font-size-xl;
+   margin-bottom: $s-size;
+}
+
+.contact-title {
+   color: $off-white-darker;
+   text-shadow: 2px 3px 4px rgb(41, 41, 41);
+   margin-left: 6.5rem;
+   font-size: $font-size-xl;
+   display: none;
 }

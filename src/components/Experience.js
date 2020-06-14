@@ -4,7 +4,7 @@ import React from 'react';
 const Experience = () => {
    return (
       <div className="content-container">
-         <h1>Experience</h1>
+         <h1 className="pagetitle">Experience</h1>
          <p>I have done many things. Many better than yours.</p>
       </div>
    )

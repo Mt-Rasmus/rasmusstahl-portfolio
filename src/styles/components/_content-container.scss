@@ -12,8 +12,8 @@
 .content-align-sbs--wrap {
    flex-direction: row;
    flex-wrap: wrap;
-   background: $off-white-darker;
    margin: 0 $s-size;
+   justify-content: center;
 }
 
 
@@ -35,17 +35,14 @@
 }
 
 .content-container {
-   //margin: 0 auto; /* This with max-width centers content */
    padding: 0 $m-size;
    max-width: 100%;
    min-width: 0;
    @media (min-width: $desktop-breakpoint) {
       padding: 0 $xl-size;
-      //max-width: 90%;
       min-width: 0;
    }
    @media (min-width: $breakpoint-small) {
-      //color: green;
       padding: 0 $xxl-size;
    }   
    @media (min-width: $breakpoint-large) {
@@ -57,8 +54,7 @@
 }
 
 .content-container-nav {
-   margin: 0 auto; /* This with max-width centers content */
-   // padding: 0 $m-size;
+   margin: 0 auto;
    width: 85%;
 }
 
@@ -71,6 +67,14 @@
    align-items: center;
    display: flex;
    justify-content: center;
+}
+
+.bottom-container {
+   position: static;
+   @media (min-width: $desktop-breakpoint) {
+      position: absolute;
+      bottom: 2rem;
+   }
 }
 
 .box-slant {

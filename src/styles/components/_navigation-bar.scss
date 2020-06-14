@@ -1,9 +1,10 @@
 
 .navigation-bar {
-   background-color: blueviolet;
+   background-color: $main-theme;
    width: 100%;
    display: block;
    overflow: auto;
+   color:black;
    @media (min-width: $desktop-breakpoint) {
       animation-name: fadeInX;
       animation-duration: .8s;
@@ -42,16 +43,17 @@
 
 
 @keyframes fadeInY {
-   from {transform: translateY(-20%); opacity: 0;}
+   from {transform: translateY(-13%); opacity: 0;}
    to {transform: translateY(0); opacity: 1;}
- }
+}
+
 
 .slider {
-   position: absolute;
-   background-color: black;
    animation-name: fadeInY;
    animation-duration: .6s;
-   z-index: 2;
+   background-color: $main-theme;
+   padding-bottom: $xxs-size;
+   text-align: right;
 }
 
 hr {

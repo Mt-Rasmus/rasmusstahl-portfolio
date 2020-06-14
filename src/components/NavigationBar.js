@@ -52,12 +52,6 @@ const NavigationBar = () => {
                            onClick={() => setShowMenu(!showMenu)}
                         />
                      </div>
-                     {(showMenu) && <div 
-                        className="slider" 
-                        id="slider"
-                     > 
-                        <PageList toggleMenu={toggleMenu} /> 
-                     </div>}
                   </div>
                   <span className="show-desktop">
                      <PageList />   
@@ -67,7 +61,13 @@ const NavigationBar = () => {
                   <Contact />   
                </span> 
             </div>
-         </div>  
+         </div>
+         {(showMenu) && 
+            <div 
+               className="slider" 
+            > 
+               <PageList toggleMenu={toggleMenu} /> 
+            </div>}            
          <div className="navbar-space-filler"></div>              
       </div>
    )

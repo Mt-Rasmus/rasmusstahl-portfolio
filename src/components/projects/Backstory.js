@@ -1,8 +1,9 @@
 
 import React from 'react';
+import TechStack from '../TechStack';
 
-const Backstory = () => {
-
+const Backstory = (props) => {
+   const techStack = ["javascript", "css3", "html5", "react", "firebase", "webpack", "git"];
    return (
       <div className="content-container content-container--project box-slant">
          <div className="content-align-sbs content-align-sbs--project content-align-sbs--project--left">
@@ -28,12 +29,19 @@ const Backstory = () => {
                   in order to figure out what the backstory is. 
                   They may only ask 'yes' or 'no' questions.               
                </p>
+               <p>Technical details:</p> 
+               <ul>
+                  <li>Firebase used for database management. </li>
+                  <li>State management: React </li>
+                  <li>Responsive design. </li>
+               </ul>                 
                <p>
                   Note: Illustrations made by me (drawn in Adobe Animate).
                </p>    
             </div>
-       
+
          </div>
+         <TechStack tech={techStack} index={props.index}/> 
       </div>
    )
 }

@@ -94,6 +94,7 @@
 
 .hamburger-menu {
    width: 20%;
+   color: $off-white-darker;
 }
 
 .contact-icon {
@@ -108,18 +109,32 @@
 .tech-icon-container {
    flex-direction: row;
    flex-wrap: wrap;
-   background: $off-white-darker;
    margin: 0 $xs-size;
    width: auto;
+}
+
+@keyframes fadeIn {
+   from {transform: scale(0)}
+   to {transform: scale(1)}
+}
+
+.tech-icon-placeholder {
+   width: 100%;
+   padding-top: 51px;
+   padding-top: calc((42%/51)*100);
+   position: relative;
+   height: 0;
 }
 
 .tech-icon {
    margin: 0 $xs-size;
    width: 2rem;
+   display: block;
+   animation-name: fadeIn;
+   animation-duration: 0.6s;
    @media (min-width: $desktop-breakpoint) {
       margin: 0 $xs-size;
       width: 3rem;
    }
 }
-
 
