@@ -19,13 +19,14 @@ const TechStack = (props) => {
       }
       const observer = new IntersectionObserver(intersectionCallback, options);
       observer.observe(techDiv);
-   }, [])
+   }, [intersectionCallback, props.index])
 
    const getTechTitle = (name) => {
       switch(name) {
          case "javascript": return 'JavaScript';
-         case "css3": return 'CSS3';
          case "html5": return 'HTML5';
+         case "css3": return 'CSS3';
+         case "sass": return 'SASS';
          case "react": return 'React';
          case "redux": return 'Redux';
          case "firebase": return 'Firebase';
@@ -33,6 +34,10 @@ const TechStack = (props) => {
          case "git": return 'Git';
          case "csharp": return 'C#';
          case "unity": return 'Unity';
+         case "webgl": return 'WebGL';
+         case "threejs": return 'Three.js';
+         case "d3-js": return 'D3.js';
+         case "matlab": return 'Matlab';
          default: return "not found"
       }
    }

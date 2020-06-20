@@ -3,12 +3,12 @@ import React from 'react';
 import TechStack from '../TechStack';
 
 const ThaWeather = (props) => {
-   const techStack = ["javascript", "css3", "html5", "react", "webpack", "git"];
+   const techStack = ["javascript", "html5", "css3", "sass", "react", "d3-js", "webpack", "git"];
    return (
       <div className="content-container content-container--project">
-         <h1>Tha weather</h1>
          <div className="content-align-sbs content-align-sbs--project">
-            <div className="project-text">
+            <div className="project-text project-text__left">
+               <h1>Tha weather</h1>
                <p>
                   Tha Weather is a simple weather app.<br/>
                </p>
@@ -23,8 +23,15 @@ const ThaWeather = (props) => {
                      <li>State management: React </li>
                      <li>d3.js used to create animated line graph</li>
                      <li>Responsive design. </li>
-                  </ul>       
+                  </ul>  
+                  <a href="https://tha-weather.herokuapp.com/">
+                  <button className="button">Visit site</button>
+                  </a>
+                  <a href="https://github.com/Mt-Rasmus/The-Weather">
+                     <button className="button">Source code</button>
+                  </a>                       
             </div>
+
             <div className="img-container-project ">
                <span className="helper"></span>
                <img 

@@ -1,31 +1,14 @@
 
 .button {
-   
-}
-
-.button-close {
-   cursor: pointer;
-   position: absolute;
-   right: 0.6rem;
-   top: 0.6rem;
-   width: 3.2rem;
-   height: 3.2rem;
-   opacity: 0.4;
-   &:hover {
-      opacity: 0.7;
-   }
-   &:before, &:after {
-      position: absolute;
-      left: 1.5rem;
-      content: ' ';
-      height: 3rem;
-      width: 0.2rem;
-      background-color: $off-white;
-   }
-   &:before {
-      transform: rotate(45deg);
-   }
-   &:after {
-      transform: rotate(-45deg);
+   background-color: $main-theme;
+   height: 4rem;
+   width: 12rem;
+   font-family: 'Barlow', sans-serif;
+   font-size: $font-size-large;
+   font-weight: 600;
+   margin: 0 $s-size $m-size 0;
+   border-radius: 4px;
+   @media (min-width: $breakpoint-large) {
+      margin: 0 $s-size $xs-size 0;
    }
 }

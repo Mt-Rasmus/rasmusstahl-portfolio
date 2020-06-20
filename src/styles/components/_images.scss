@@ -25,7 +25,6 @@
    left: 0;
 }
 
-
 .img-container-project--left {
    margin-right: 3rem;
 }
@@ -33,7 +32,7 @@
 .img-container-project {
    max-width: 50rem;
    min-width: 50rem;
-
+   text-align: center;
    @media (max-width: $breakpoint-medium) {
       margin: auto;
       min-width: 0;
@@ -46,7 +45,32 @@
    vertical-align: middle;
    max-width: 100%; 
    height: auto;
+   margin-top: $s-size;
+   @media (min-width: $breakpoint-medium) {
+      margin-top: 0;
+   }
 }
+
+.img-project {
+   max-width: 100%; 
+   height: auto;
+   margin-top: $s-size;
+   width: 100%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   @media (min-width: $breakpoint-small) {
+      width: 75%;
+   }
+   @media (min-width: $breakpoint-medium) {
+      vertical-align: middle;
+      max-width: 100%;
+      width: 90%;
+      margin: 0;
+      display: inline;
+   }
+}
+
 
 .site-web-img {
    width: inherit;
@@ -68,6 +92,26 @@
    height: 100%;
    display: inline-block;
    vertical-align: middle;
+   @media (max-width: $breakpoint-medium) {
+      height: 100%;
+      display: block;
+   }
+}
+
+.helper__double {
+   height: 45%;
+   @media (max-width: $breakpoint-medium) {
+      height: 100%;
+      display: block;
+   }
+}
+
+.helper__double-wfigcap {
+   height: 20%;
+   @media (max-width: $breakpoint-medium) {
+      height: 100%;
+      display: block;
+   }
 }
 
 .cv-container {
@@ -136,5 +180,15 @@
       margin: 0 $xs-size;
       width: 3rem;
    }
+}
+
+figure {
+   margin: 0;
+}
+
+figcaption {
+   margin-bottom: $l-size;
+   text-align: center;
+   font-size: $font-size-small;
 }
 
