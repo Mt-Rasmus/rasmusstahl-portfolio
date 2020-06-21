@@ -1,10 +1,6 @@
 import React from 'react';
-import TechStack from './TechStack';
 
 const Education = () => {
-   const techStackUniface = ["cplusplus", "git", "jenkins", "javascript"];
-   const techStackSICK = ["lua", "subversion"];
-   const index = 0;
    return (
       <div className="content-container">
          <div className="head-line-container">

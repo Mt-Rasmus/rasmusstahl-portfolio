@@ -22,7 +22,7 @@ const Experience = () => {
                development of new features, maintenance, bug fixing, writing tests and documentation, etc.
                Coding mainly in C++, with some JavaScript and Uniface’s own scripting language called Proc
                Script. Version control: Git, CI: Jenkinks.
-               <TechStack tech={techStackUniface} index={0}/>               
+               <TechStack tech={techStackUniface} index={index}/>               
                </div>
             <div>Jun-Aug 2018:</div>
             <div className="span-two">
@@ -30,7 +30,7 @@ const Experience = () => {
                Summer job at SICK IVP in Linköping. SICK is a company that develops 2D and 3D Machine
                Vision camera hardware and software. My work included developing 2D machine vision user
                applications in Lua for image processing and analysis.
-               <TechStack tech={techStackSICK} index={0}/>   
+               <TechStack tech={techStackSICK} index={index}/>   
             </div>
             <div>Oct 2010–Aug 2013, summers 2016 and 2017:</div>
             <div className="span-two">
