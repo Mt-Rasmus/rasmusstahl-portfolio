@@ -21,7 +21,12 @@ const PageList = (props) => {
             <Link to="/experience" className="nav-link" onClick={props.toggleMenu}>
                <h2 className="list-item">Experience</h2>
             </Link>            
-         </li>    
+         </li>
+         <li>             
+            <Link to="/education" className="nav-link" onClick={props.toggleMenu}>
+               <h2 className="list-item">Education</h2>
+            </Link>            
+         </li>         
          <li>             
             <a className="nav-link" href={`/pdf/CV_1.pdf`}>
                <h2 className="list-item">CV</h2>

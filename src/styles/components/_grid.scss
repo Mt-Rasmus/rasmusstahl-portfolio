@@ -1,0 +1,21 @@
+
+.exp-grid {
+   margin: $l-size auto 0 auto;
+   display: grid;
+   grid-gap: $m-size;
+   grid-template-columns: repeat(1, 1fr);
+   @media (min-width: $desktop-breakpoint) {
+      grid-template-columns: repeat(5, 1fr);
+   }
+}
+
+.span-two {
+   grid-column: span 1;
+   @media (min-width: $desktop-breakpoint) {
+      grid-column: span 4;
+   }
+}
+
+.tech-wrapper {
+   margin-top: $m-size;
+}

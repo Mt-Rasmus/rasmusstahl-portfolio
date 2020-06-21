@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500;800&display=swap');
 
 .project-text {
    position: relative;
@@ -44,6 +44,7 @@
    font-family: 'Changa', sans-serif;
    font-size: $font-size-xl;
    margin-bottom: $s-size;
+   font-weight: 200;
 }
 
 .contact-title {
@@ -52,4 +53,33 @@
    margin-left: 6.5rem;
    font-size: $font-size-xl;
    display: none;
+}
+
+.about > p {
+   font-size: $font-size-large;
+}
+
+.head-line-container {
+   display: inline-block;
+   position: relative;
+}
+
+.head-line {
+   margin: 0 auto;
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      right: 0;
+      width: 90%;
+      border-bottom: 3px solid;
+      color: rgb(209, 209, 209);
+      margin: 0 auto;
+      //transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   }
+   // &:hover:after { 
+   //    width: 100%; 
+   //    left: 0; 
+   //  }
 }

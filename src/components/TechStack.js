@@ -38,14 +38,18 @@ const TechStack = (props) => {
          case "threejs": return 'Three.js';
          case "d3-js": return 'D3.js';
          case "matlab": return 'Matlab';
+         case "cplusplus": return 'C++';
+         case "lua": return "Lua";
+         case "subversion": return "SVN";
+         case "jenkins": return "Jenkins";
          default: return "not found"
       }
    }
 
    return (
       <div>  
-         <p className="tech-header-title">Tech Stack:</p>
-         <div className="content-align-sbs content-align-sbs--wrap techDiv" id={`techDiv${props.index}`}>
+         {props.index >= 0 && <p className="tech-header-title">Tech Stack:</p>}
+         <div className="content-align-sbs content-align-sbs--wrap tech-div" id={`techDiv${props.index}`}>
          {props.tech.map((element, index) => {
                return (
                   <div key={index} className="content-align-sbs tech-icon-container ">

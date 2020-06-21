@@ -41,12 +41,10 @@
    to {transform: translateY(0); opacity: 1;}
  }
 
-
 @keyframes fadeInY {
    from {transform: translateY(-13%); opacity: 0;}
    to {transform: translateY(0); opacity: 1;}
 }
-
 
 .slider {
    animation-name: fadeInY;
@@ -59,8 +57,9 @@
 hr {
    position: absolute;
    width: 100%;
-   border: 1px solid black;
+   border: 1px solid $dark-grey;
    margin: $m-size 0;
    position: relative;
    width: 100%;
 }
+

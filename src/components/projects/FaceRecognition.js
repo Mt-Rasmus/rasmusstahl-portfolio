@@ -52,7 +52,7 @@ const FaceRecognition = (props) => {
             </div>
 
          </div>
-         <TechStack tech={techStack} index={props.index}/> 
+         <TechStack tech={techStack} index={props.index}/>
       </div>
    )
 }

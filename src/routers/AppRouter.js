@@ -5,6 +5,7 @@ import Introduction from '../components/Introduction';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import Education from '../components/Education';
 import CV from '../components/CV';
 import NotFoundPage from '../components/NotFoundPage';
 import { Router, Route, Switch } from 'react-router-dom';
@@ -23,6 +24,7 @@ const AppRouter = () => (
             <CustomRoute path="/about" component={About} /> 
             <CustomRoute path="/projects" component={Projects} /> 
             <CustomRoute path="/experience" component={Experience} />
+            <CustomRoute path="/education" component={Education} />
             <CustomRoute path="/cv" component={CV} /> 
             <Route component={NotFoundPage}/>
          </Switch>

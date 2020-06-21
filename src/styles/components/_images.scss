@@ -138,12 +138,14 @@
 
 .hamburger-menu {
    width: 20%;
+   max-width: 5rem;
    color: $off-white-darker;
 }
 
 .contact-icon {
    margin: 0 $xs-size;
    width: 12.5%;
+   max-width: 10rem;
    @media (min-width: $desktop-breakpoint) {
       margin: 0 $s-size;
       width: 20%;

@@ -13,7 +13,7 @@ import MazaGenerator from './projects/MazaGenerator';
 import VAST from './projects/VAST';
 
 const Projects = () => {
-   let index = -1;
+   let index = 0;
    return (
       <div className="content-container-parent">
          <div className="content-container">
