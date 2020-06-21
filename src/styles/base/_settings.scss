@@ -1,6 +1,6 @@
 
 // Colors
-$darker-grey: #1f1f1f;
+$darker-grey: #0f0f0f;
 $dark-grey: #3d3d3d;
 $medium-grey: #666;
 $grey: #888888;
@@ -8,8 +8,9 @@ $light-teal: #6ac3e6;
 $off-white-light: #f7f7f7;
 $off-white: #fcfcfc;
 $off-white-darker: rgb(228, 228, 228);
-//$main-theme: rgb(97, 97, 114);
-$main-theme: rgb(153, 153, 153);
+//$main-theme: rgb(153, 153, 153);
+$main-theme: rgb(122, 122, 122);
+$secondary-theme: rgb(148, 224, 98);
 
 // Font Size
 $font-size-4xl: 7rem;
@@ -31,6 +32,8 @@ $xxl-size: 8.0rem;
 $xxxl-size: 20.0rem;
 $xxxxl-size: 35.0rem;
 $desktop-breakpoint: 45rem;
+$line-breakpoint: 660px;
+$scroll-breakpoint: 740px;
 $breakpoint-xl: 110rem;
 $breakpoint-large: 95rem;
 $breakpoint-medium: 82rem;

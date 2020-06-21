@@ -7,9 +7,12 @@ const Experience = () => {
    const index = 0;
    return (
       <div className="content-container">
-         <h1 className="pagetitle">Experience</h1>
          <div className="head-line-container">
-            <h3 className="head-line">Work experience</h3>
+            <h1 className="page-title head-line head-line__page-title">Experience</h1>         
+         </div>
+         <br></br><br></br><br></br>
+         <div className="head-line-container">
+            <h3 className="head-line">Work experience:</h3>
          </div>
          <div className="exp-grid">
             <div>Aug 2019–Present:</div>
@@ -37,6 +40,7 @@ const Experience = () => {
                various problems. Also selling subscriptions to current and potential customers.
             </div>
          </div>
+         <br></br>
       </div>
    )
 }

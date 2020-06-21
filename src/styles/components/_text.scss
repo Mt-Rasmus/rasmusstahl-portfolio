@@ -25,7 +25,8 @@
    } 
 }
 
-.pagetitle {
+.page-title {
+   margin: $l-size auto;
    font-family: 'Bebas Neue', cursive;
    font-size: $font-size-xxxl;
 }
@@ -73,13 +74,33 @@
       left: 0;
       right: 0;
       width: 90%;
-      border-bottom: 3px solid;
+      border-bottom: 2px solid;
       color: rgb(209, 209, 209);
       margin: 0 auto;
+      border: none;
       //transition: width 0.3s ease 0s, left 0.3s ease 0s;
    }
    // &:hover:after { 
    //    width: 100%; 
    //    left: 0; 
    //  }
+}
+
+.head-line__page-title {
+   height: 6.5rem;
+   margin: $l-size auto 0 auto;
+   &::after {
+      border-bottom: 5px solid;
+      color: $secondary-theme;
+   }
+   //bottom: 0rem;
+}
+
+.introduction-head-line {
+   color: $secondary-theme;
+   font-size: $font-size-xxxl;
+}
+
+.p-large {
+   font-size: $font-size-xl;
 }

@@ -75,6 +75,11 @@
       position: absolute;
       bottom: 2rem;
    }
+   @media (max-height: $scroll-breakpoint) { // 660px
+      margin-top: $m-size;
+      position: static;
+      display: block;
+   }
 }
 
 .box-slant {
@@ -112,4 +117,8 @@
 
 .tech-div {
    margin: 0;
+}
+
+.empty-box {
+   height: 2rem;
 }

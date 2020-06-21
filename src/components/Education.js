@@ -7,9 +7,12 @@ const Education = () => {
    const index = 0;
    return (
       <div className="content-container">
-         <h1 className="pagetitle">Education</h1>
          <div className="head-line-container">
-            <h3 className="head-line">University degrees</h3>
+            <h1 className="page-title head-line head-line__page-title">Education</h1>         
+         </div>
+         <br></br><br></br><br></br>
+         <div className="head-line-container">
+            <h3 className="head-line">University degrees:</h3>
          </div>
          <div className="exp-grid">
             <div>2017–2019:</div>
@@ -29,6 +32,7 @@ const Education = () => {
             with heavy focus on math and software development, with a tilt toward media related areas such as GUI design/development, 
             computer graphics, information visualization, VR, image processing, UX/web design, etc.
          </p>
+         <br></br>
       </div>
    )
 }

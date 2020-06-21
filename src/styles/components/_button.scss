@@ -1,6 +1,7 @@
 
 .button {
-   background-color: $main-theme;
+   //background-color: $main-theme;
+   background-color: $secondary-theme;
    height: 4rem;
    width: 12rem;
    font-family: 'Barlow', sans-serif;
@@ -10,14 +11,15 @@
    border-radius: 4px;
    border: none;
    outline: none;
-   box-shadow: 2px 2px #575757;
+   box-shadow: 2px 2px darken($secondary-theme, 20%);
+   transition: background-color;
    @media (min-width: $breakpoint-large) {
       margin: 0 $s-size $xs-size 0;
    }
-}
-
-.button:hover {
-   background-color: lighten($main-theme, 7%);
+   &:hover {
+      transition: all 0.15s ease-in-out;
+      background-color: lighten($secondary-theme, 7%);
+   }
 }
 
 
