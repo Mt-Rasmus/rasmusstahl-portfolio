@@ -3,7 +3,7 @@ import React from 'react';
 import TechStack from './TechStack';
 
 const About = () => {
-   const techStack = ["javascript", "html5", "css3", "sass", "react", "redux", "webpack", "git"];
+   const techStack = ["javascript", "html5", "css3", "sass", "react", "redux", "webpack", "git", "unity", "csharp",];
    const index = -1;
    return (
       <div className="content-container about">
