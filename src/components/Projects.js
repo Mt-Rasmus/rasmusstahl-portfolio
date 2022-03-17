@@ -18,7 +18,7 @@ const Projects = () => {
       <div className="content-container-parent">
          <div className="content-container">
          <div className="head-line-container">
-            <h1 className="page-title head-line head-line__page-title">Projects</h1>         
+            <h1 className="page-title head-line head-line__page-title">Personal Projects</h1>         
          </div>
          <br></br><br></br>
             <p style={{margin: "0 0 30px 0", fontSize: "1.6rem" }}>All projects below are personal solo projects, unless stated otherwise.</p>

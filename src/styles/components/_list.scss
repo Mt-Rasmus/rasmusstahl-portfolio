@@ -32,7 +32,8 @@
       //transition: width .3s;
    }
    &:hover {
-      color: lighten($darker-grey, 20%);
+      // color: lighten($darker-grey, 30%);
+      opacity: 0.65;
    }
 }
 

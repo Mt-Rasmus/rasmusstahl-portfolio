@@ -36,7 +36,7 @@ const NavigationBar = () => {
                </div>
                <div className="text-container">
                   <h2 className="title">Rasmus Ståhl</h2>
-                  <p className="subtitle">Software Engineer</p>
+                  <p className="subtitle">Fullstack Developer</p>
                </div>
                <hr className="show-mobile"></hr>
                <nav>

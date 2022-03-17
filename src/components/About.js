@@ -3,7 +3,7 @@ import React from 'react';
 import TechStack from './TechStack';
 
 const About = () => {
-   const techStack = ["javascript", "html5", "css3", "sass", "react", "redux", "webpack", "git", "unity", "csharp",];
+   const techStack = ["javascript", "html5", "css3", "sass", "vue", "react", "redux", "php", "laravel", "git"];
    const index = -1;
    return (
       <div className="content-container about">
@@ -11,7 +11,7 @@ const About = () => {
             <h1 className="page-title head-line head-line__page-title">About me</h1>         
          </div>
          <br></br><br></br>
-         <p>I am a software engineer with a passion for developing great user interfaces.</p>
+         <p>I'm a fullstack developer with a passion for developing great user interfaces.</p>
          <p>I like the whole creative spectrum behind creating user applications, 
          from design- to implementation.</p>
          <p><strong>Favourite tech:</strong></p>

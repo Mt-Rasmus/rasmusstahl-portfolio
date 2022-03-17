@@ -1,7 +1,10 @@
 import React from 'react';
 import TechStack from './TechStack';
 
+
+
 const Experience = () => {
+   const techStackStoryteq = ["vue", "nuxt", "php", "laravel", "git"];
    const techStackUniface = ["cplusplus", "git", "jenkins", "javascript"];
    const techStackSICK = ["lua", "subversion"];
    const index = 0;
@@ -15,15 +18,23 @@ const Experience = () => {
             <h3 className="head-line">Work experience:</h3>
          </div>
          <div className="exp-grid">
-            <div>Aug 2019–Present:</div>
+         <div>Aug 2020–Present:</div>
+            <div className="span-two">
+               <p style={{margin: "0"}}><strong>Fullstack Developer</strong>, <i>Storyteq</i>, Amsterdam, The Netherlands.</p> 
+               Foremost front end development, as well as back end of the Storyteq creative automation web
+               platform. Heavy focus on developing new features for users, but also maintenance, testing, bug
+               fixing, etc.
+               <TechStack tech={techStackStoryteq} index={index}/>               
+            </div>
+            <div>Aug 2019 – Aug 2020:</div>
             <div className="span-two">
                <p style={{margin: "0"}}><strong>Software Developer</strong>, <i>Uniface BV</i>, Amsterdam, The Netherlands.</p> 
-               Fulltime software development job. I am part of a scrum team taking on tasks including
+               Fulltime software development job. I was part of a scrum team taking on tasks including
                development of new features, maintenance, bug fixing, writing tests and documentation, etc.
-               Coding mainly in C++, with some JavaScript and Uniface’s own scripting language called Proc
+               Code was mainly written in C++, with some JavaScript and Uniface’s own scripting language called Proc
                Script. Version control: Git, CI: Jenkinks.
                <TechStack tech={techStackUniface} index={index}/>               
-               </div>
+            </div>
             <div>Jun-Aug 2018:</div>
             <div className="span-two">
                <p style={{margin: "0"}}><strong>Software Developer</strong>, <i>SICK IVP</i>, Linköping, Sweden.</p> 
@@ -41,6 +52,7 @@ const Experience = () => {
             </div>
          </div>
          <br></br>
+         <div class="center-container">Icons by&nbsp;<a target="_blank" href="https://icons8.com">Icons8</a></div>
       </div>
    )
 }

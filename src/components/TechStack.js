@@ -10,6 +10,8 @@ const TechStack = (props) => {
       })
    }
 
+   const pngImages = ["vue", "vuex", "nuxt", "php", "laravel" ];
+
    useEffect(() => {
       const techDiv = document.getElementById(`techDiv${props.index}`);
       let options = {
@@ -29,6 +31,10 @@ const TechStack = (props) => {
          case "sass": return 'SASS';
          case "react": return 'React';
          case "redux": return 'Redux';
+         case "vue": return 'Vue / Vuex';
+         case "nuxt": return 'Nuxt';
+         case "php": return 'PHP';
+         case "laravel": return 'Laravel';
          case "firebase": return 'Firebase';
          case "webpack": return 'Webpack';
          case "git": return 'Git';
@@ -56,8 +62,9 @@ const TechStack = (props) => {
                      {visible ?
                      <img 
                         className="tech-icon"
-                        src={`/images/tech/${element}.svg`} 
+                        src={`/images/tech/${element}.${pngImages.includes(element) ? 'png' : 'svg'}`} 
                         alt=""
+                        height= "32px" width="42px"
                      /> :
                      <img 
                         style={{opacity: "0"}}
